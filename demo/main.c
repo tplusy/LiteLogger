@@ -1,5 +1,5 @@
 /*
- * This file is part of the EasyLogger Library.
+ * This file is part of the LiteLogger Library.
  *
  * Copyright (c) 2015-2017, Armink, <armink.ztl@gmail.com>
  *
@@ -38,9 +38,9 @@ static void test_elog(void);
 int main(void) {
     /* close printf buffer */
     setbuf(stdout, NULL);
-    /* initialize EasyLogger */
+    /* initialize LiteLogger */
     elog_init();
-    /* set EasyLogger log format */
+    /* set LiteLogger log format */
     elog_set_fmt(ELOG_LVL_ASSERT, ELOG_FMT_ALL);
     elog_set_fmt(ELOG_LVL_ERROR, ELOG_FMT_LVL | ELOG_FMT_TAG | ELOG_FMT_TIME);
     elog_set_fmt(ELOG_LVL_WARN, ELOG_FMT_LVL | ELOG_FMT_TAG | ELOG_FMT_TIME);
@@ -50,7 +50,7 @@ int main(void) {
 #ifdef ELOG_COLOR_ENABLE
     elog_set_text_color_enabled(true);
 #endif
-    /* start EasyLogger */
+    /* start LiteLogger */
     elog_start();
 
     /* dynamic set enable or disable for output logs (true or false) */
@@ -71,18 +71,18 @@ int main(void) {
 }
 
 /**
- * EasyLogger demo
+ * LiteLogger demo
  */
 void test_elog(void) {
     while(true) {
         /* test log output for all level */
-        log_a("1 Hello EasyLogger!");
-        log_e("2 Hello EasyLogger!");
-        log_w("3 Hello EasyLogger!");
-        log_i("4 Hello EasyLogger!");
-        log_d("5 Hello EasyLogger!");
-        log_v("6 Hello EasyLogger!");
-        //elog_raw("7 Hello EasyLogger!");
+        log_a("1 Hello LiteLogger!");
+        log_e("2 Hello LiteLogger!");
+        log_w("3 Hello LiteLogger!");
+        log_i("4 Hello LiteLogger!");
+        log_d("5 Hello LiteLogger!");
+        log_v("6 Hello LiteLogger!");
+        //elog_raw("7 Hello LiteLogger!");
         sleep(5);
     }
 }

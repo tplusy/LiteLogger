@@ -1,5 +1,5 @@
 /*
- * This file is part of the EasyLogger Library.
+ * This file is part of the LiteLogger Library.
  *
  * Copyright (c) 2015-2018, Armink, <armink.ztl@gmail.com>
  *

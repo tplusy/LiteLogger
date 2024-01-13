@@ -1,5 +1,5 @@
 /*
- * This file is part of the EasyLogger Library.
+ * This file is part of the LiteLogger Library.
  *
  * Copyright (c) 2015-2018, Armink, <armink.ztl@gmail.com>
  *
@@ -114,18 +114,18 @@
 #endif
 #endif /* ELOG_COLOR_ENABLE */
 
-/* EasyLogger object */
-static EasyLogger elog;
+/* LiteLogger object */
+static LiteLogger elog;
 /* every line log's buffer */
 static char log_buf[ELOG_LINE_BUF_SIZE] = { 0 };
 /* level output info */
 static const char *level_output_info[] = {
-        [ELOG_LVL_ASSERT]  = "A/",
-        [ELOG_LVL_ERROR]   = "E/",
-        [ELOG_LVL_WARN]    = "W/",
-        [ELOG_LVL_INFO]    = "I/",
-        [ELOG_LVL_DEBUG]   = "D/",
-        [ELOG_LVL_VERBOSE] = "V/",
+        [ELOG_LVL_ASSERT]  = "[A]-",
+        [ELOG_LVL_ERROR]   = "[E]-",
+        [ELOG_LVL_WARN]    = "[W]-",
+        [ELOG_LVL_INFO]    = "[I]-",
+        [ELOG_LVL_DEBUG]   = "[D]-",
+        [ELOG_LVL_VERBOSE] = "[V]-",
 };
 
 #ifdef ELOG_COLOR_ENABLE
@@ -143,7 +143,7 @@ static const char *color_output_info[] = {
 static bool get_fmt_enabled(uint8_t level, size_t set);
 static void elog_set_filter_tag_lvl_default(void);
 
-/* EasyLogger assert hook */
+/* LiteLogger assert hook */
 void (*elog_assert_hook)(const char* expr, const char* func, size_t line);
 
 extern void elog_port_output(const char *log, size_t size);
@@ -151,7 +151,7 @@ extern void elog_port_output_lock(void);
 extern void elog_port_output_unlock(void);
 
 /**
- * EasyLogger initialize.
+ * LiteLogger initialize.
  *
  * @return result
  */
@@ -201,7 +201,7 @@ ElogErrCode elog_init(void) {
 }
 
 /**
- * EasyLogger deinitialize.
+ * LiteLogger deinitialize.
  *
  */
 void elog_deinit(void) {
@@ -224,7 +224,7 @@ void elog_deinit(void) {
 
 
 /**
- * EasyLogger start after initialize.
+ * LiteLogger start after initialize.
  */
 void elog_start(void) {
     if (!elog.init_ok) {
@@ -241,11 +241,11 @@ void elog_start(void) {
 #endif
 
     /* show version */
-    log_i("EasyLogger V%s is initialize success.", ELOG_SW_VERSION);
+    log_i("LiteLogger V%s is initialize success.", ELOG_SW_VERSION);
 }
 
 /**
- * EasyLogger stop after initialize.
+ * LiteLogger stop after initialize.
  */
 void elog_stop(void) {
     if (!elog.init_ok) {
@@ -262,7 +262,7 @@ void elog_stop(void) {
 #endif
 
     /* show version */
-    log_i("EasyLogger V%s is deinitialize success.", ELOG_SW_VERSION);
+    log_i("LiteLogger V%s is deinitialize success.", ELOG_SW_VERSION);
 }
 
 
@@ -758,7 +758,7 @@ void elog_output_lock_enabled(bool enabled) {
 }
 
 /**
- * Set a hook function to EasyLogger assert. It will run when the expression is false.
+ * Set a hook function to LiteLogger assert. It will run when the expression is false.
  *
  * @param hook the hook function
  */

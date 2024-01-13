@@ -1,5 +1,5 @@
 /*
- * This file is part of the EasyLogger Library.
+ * This file is part of the LiteLogger Library.
  *
  * Copyright (c) 2015-2019, Qintl, <qintl_linux@163.com>
  *
@@ -37,7 +37,7 @@
 extern "C" {
 #endif
 
-/* EasyLogger file log plugin's software version number */
+/* LiteLogger file log plugin's software version number */
 #define ELOG_FILE_SW_VERSION                "V1.0.0"
 #ifdef linux
 #define likely(x) __builtin_expect(!!(x), 1)

@@ -1,5 +1,5 @@
 /*
- * This file is part of the EasyLogger Library.
+ * This file is part of the LiteLogger Library.
  *
  * Copyright (c) 2016-2017, Armink, <armink.ztl@gmail.com>
  *
@@ -376,7 +376,7 @@ void elog_async_deinit(void) {
     elog_async_output_notice();
 
     pthread_join(async_output_thread, NULL);
-    
+
     sem_destroy(&output_notice);
 #endif
 

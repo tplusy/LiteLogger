@@ -1,5 +1,5 @@
 /*
- * This file is part of the EasyLogger Library.
+ * This file is part of the LiteLogger Library.
  *
  * Copyright (c) 2015-2019, Qintl, <qintl_linux@163.com>
  *
@@ -22,7 +22,7 @@
  * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
- * Function:  Portable interface for EasyLogger's file log pulgin.
+ * Function:  Portable interface for LiteLogger's file log pulgin.
  * Created on: 2019-01-05
  */
 
@@ -58,7 +58,7 @@ static int lock_open(void);
 static void lock_deinit(void);
 
 /**
- * EasyLogger flile log pulgin port initialize
+ * LiteLogger flile log pulgin port initialize
  *
  * @return result
  */
@@ -95,7 +95,7 @@ void elog_file_port_deinit(void)
 }
 
 /**
- * initialize the lock 
+ * initialize the lock
  */
 static void lock_init(void)
 {
@@ -129,7 +129,7 @@ __exit:
 }
 
 /**
- * gets the lock 
+ * gets the lock
  */
 static int lock_open(void)
 {
@@ -163,7 +163,7 @@ err:
 }
 
 /**
- * deinitialize the lock 
+ * deinitialize the lock
  */
 static void lock_deinit(void)
 {

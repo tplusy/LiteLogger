@@ -1,5 +1,5 @@
 /*
- * This file is part of the EasyLogger Library.
+ * This file is part of the LiteLogger Library.
  *
  * Copyright (c) 2015-2019, Armink, <armink.ztl@gmail.com>
  *
@@ -53,10 +53,10 @@ extern "C" {
 /* output log's level total number */
 #define ELOG_LVL_TOTAL_NUM                   6
 
-/* EasyLogger software version number */
-#define ELOG_SW_VERSION                      "2.2.99"
+/* LiteLogger software version number */
+#define ELOG_SW_VERSION                      "0.0.12"
 
-/* EasyLogger assert for developer. */
+/* LiteLogger assert for developer. */
 #ifdef ELOG_ASSERT_ENABLE
     #define ELOG_ASSERT(EXPR)                                                 \
     if (!(EXPR))                                                              \
@@ -170,9 +170,9 @@ typedef struct {
     bool text_color_enabled;
 #endif
 
-}EasyLogger, *EasyLogger_t;
+}LiteLogger, *LiteLogger_t;
 
-/* EasyLogger error code */
+/* LiteLogger error code */
 typedef enum {
     ELOG_NO_ERR,
 } ElogErrCode;

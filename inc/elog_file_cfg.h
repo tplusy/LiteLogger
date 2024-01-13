@@ -1,5 +1,5 @@
 /*
- * This file is part of the EasyLogger Library.
+ * This file is part of the LiteLogger Library.
  *
  * Copyright (c) 2015-2019, Qintl, <qintl_linux@163.com>
  *
@@ -29,13 +29,13 @@
 #ifndef _ELOG_FILE_CFG_H_
 #define _ELOG_FILE_CFG_H_
 
-/* EasyLogger file log plugin's using file name */
-#define ELOG_FILE_NAME      "/tmp/elog_file.log"
+/* LiteLogger file log plugin's using file name */
+#define ELOG_FILE_NAME      "/tmp/litelog.log"
 
-/* EasyLogger file log plugin's using file max size */
-#define ELOG_FILE_MAX_SIZE  (1 * 1024 * 1024)
+/* LiteLogger file log plugin's using file max size */
+#define ELOG_FILE_MAX_SIZE  (512 * 1024)
 
-/* EasyLogger file log plugin's using max rotate file count */
+/* LiteLogger file log plugin's using max rotate file count */
 #define ELOG_FILE_MAX_ROTATE 5
 
 #endif /* _ELOG_FILE_CFG_H_ */
