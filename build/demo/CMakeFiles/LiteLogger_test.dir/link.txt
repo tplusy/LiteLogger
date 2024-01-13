@@ -1,1 +1,0 @@
-/usr/bin/cc  -fPIC -g3 -Wall -fPIC -g3 -Wall CMakeFiles/LiteLogger_test.dir/main.c.o -o LiteLogger_test  -lpthread ../libLiteLogger.a -lpthread 

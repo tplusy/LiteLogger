@@ -1,6 +1,0 @@
-/home/ssd1/helge/LiteLogger/build/CMakeFiles/rebuild_cache.dir
-/home/ssd1/helge/LiteLogger/build/CMakeFiles/edit_cache.dir
-/home/ssd1/helge/LiteLogger/build/CMakeFiles/LiteLogger.dir
-/home/ssd1/helge/LiteLogger/build/demo/CMakeFiles/rebuild_cache.dir
-/home/ssd1/helge/LiteLogger/build/demo/CMakeFiles/edit_cache.dir
-/home/ssd1/helge/LiteLogger/build/demo/CMakeFiles/LiteLogger_test.dir
