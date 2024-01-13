@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLiteLogger.a CMakeFiles/LiteLogger.dir/src/elog.c.o CMakeFiles/LiteLogger.dir/src/elog_async.c.o CMakeFiles/LiteLogger.dir/src/elog_buf.c.o CMakeFiles/LiteLogger.dir/src/elog_file.c.o CMakeFiles/LiteLogger.dir/src/elog_file_port.c.o CMakeFiles/LiteLogger.dir/src/elog_port.c.o CMakeFiles/LiteLogger.dir/src/elog_utils.c.o
+/usr/bin/ranlib libLiteLogger.a
